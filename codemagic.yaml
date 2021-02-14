@@ -1,0 +1,87 @@
+workflows:
+  default-workflows:
+    name: Default workflows
+    max_build_duration: 60
+    environment:
+      vars:
+        FIREBASE_TOKEN: Encrypted(Z0FBQUFBQmdLSmJ0bnNuVUJQbW0wc3AzckY3UEIwVkN3Q29McDFLRV9VU1QzY0hjdE5OcWZWUFJYenkyYXdkZF80YzFHajc0SjRDWmtnQ0dGOUxLdmZSc3RHckFuTHRvOU1RTW41QmxNQ2xTNmpzbzk5aW05TzQzd2ZHUjVhZl80b2Z3U1l4cTBHNnFXbDFHSDFUeFRjWkpaZzN0dkE2RkF3Y0dMaEpza3NPVXc2UE8zcTJpU1B0OE1KXzlCUERleGR1NHdPN29qdEdDeGVRS1ZXbFJvSUZ2bmI3dHV0NWNWUT09)
+        FCI_KEYSTORE_PATH: /tmp/keystore.keystore
+        FCI_KEYSTORE: Encrypted(Z0FBQUFBQmdLSmRSTVNERUcxR09sc2ZRZE1PLTlDM0RpVzl2MHZQUmk4SWY4ZXlmTERRa29FNWNwOXh6U2J5V0pDb2JBSGtRTGhKczJfNnVaUm1pMVJWbzA2aTBfdFRyLVVJenhPRUlycFNBYkMwanhIS0pwa1Q0ZUYwVWpfTC12Q3lhUlZPZzdBSEwtWHdqQy1VZjN4YWtfNkg1WHJqU0Q5dzJRU2luTEsxRjlhcUM1NUhwMXJyODVjN01qX09GczZ3TFBYTDFKODhMbGR6dkhTU3NQQlFBRjBCdnMyeWR0VkM4dDhyWFhwaW0ycHlGcDJJRUg5QkRwY1pvTnNHV1dITFowUmV1Rk9lX01vOXlkMVBVQ3RfbmpmSXJZVHl2cmVjcTVza1hhZDNnWHRHcWE3TkoxdlozMnhfQnVDdlJ1dzdFUXlDX1p6UlUtTWZHeEFWU2hxT1Z2dFdkcFlweUlXN1ZnSENDUkE0cjc4TWU4ekUtenZyMXd5cWtzc3BKUWJDaTd5dUJQbmVqbTVWSHV3YXo2UGEydzM1dF9rc21oRDRVeV9KVmJEc0RfNzFidUl1LVhSenZqS2tia0RyOGRoaGJGMWd5bExYX2dwVENRaHQ4WWxJM05JQ0lzUGoyYS1SWkdqajYwbHhfTVprX1NXWnBZT2N3Ty1IR0VyLWppZ0pLOG9oaDdaRjVOa1VhU0RqdUxBdldCdDZBNEJ0eHJaNGxfa3piNW9RZ1BUZEhodUs5V1lIeUhzdFdkY1F6TmlvalNZWGNrVG4xbFZTaUxKckE3WDJuVDVGWV85bXZsdXJZUWZKT3NiVkxvWkhlTndKNmE4UnBnWmhDUHMtTjBETlpBTzZneDBUYVZIWXFobTk2RVo0dXNtUnBBSElfY0NQaWxZa296LTdKSzdBdkpwY05uZEZySXBBY3JQNXlFdE9fbndwc2Rkc1dxanNQU1hYOHdvSk5aeXpydHRFU1Uyemo0RzMxRXFZZzEyWnJBSVFUQl9tLTV6Mmg2ZmdvSGNtaWFNWGhrQVJtdmxGN3NkbGdZX1Fod0tQTkROZ04ycXBaaTROT2I1Mm9mV1NjUk8tYnV5Z0pJOHQyMXV0ZFFnV0xsVmRBX3UyLW05Nlp3VVpLQUR2N1RjWkJmZFFiOTk2bjhXblVfZXAzRzU3WTY0RjgzNW1HUlVMM1lpYjlrLTZxOThYVVVnb3ZXd1dmWHhDUHh5Ry1PMlZYYmlVZU5CYnh1VEREX00yRzFDMzhzYndlMEVVUjdZcWVOVFU0aGZJWHU1ZWF5TE5uaHFaeDJOZUNYWU9VSEhOdFFYU2FhUkVMZzNBYVZDczdnbnN5OThLQ0Z1ZTgwdnA3WkhsT0FuX3pBcFpqRnJUM3FvUDBZOUxDSC1qb2ZodUZkUUxlVTczczdOQVotMHY2QmFEamxoazB1dUJLZ29ScUIyNkF5anc2SE1JMVUwMzlhOEVFTS1pVVF6aGxUZHJwaDdVNk5rVk1jQThBbUxLUjdBU3pXemlRSVR3RkUxUkFxdUhZNkVPejFpUFZIcG4wcXRlR2VXM1UtV01iLUJCN1dTT0h6RU94YkhjcnNHTk02dmRGbkprcDFoMjl2OFZDWS03YVFwRjFTbk5EZUpwY1J1WERkSmxwSlQ3czFuX1ZxVHRkVVpzQlNSM3UzQWQ1YTJDTEE0YlJvTTNxazU2SzB5OHIxTEtKeVhJSm83Y2RtbENMYjVIWk5FdVlNcktSWGlfbUpXOF9KNWRJSWp5ampnOHNVVGt4ZmU3Nm1fdmJ5cl9fM0FjSEo5bXVXS2RtcHA3YXpEQU4zQ3BnTGlFUDBVbGk4b3hiSm9zVTNDVmNlaE9iengzSHlpc1hsdWttYk5XV3JRQWNialJ5aWhQYUh2NHBWbWVseFpuT3EwMk11WnRwVTg2SG9GbUNuOUtLdjVPeHRrUU50TUk2MXJLQkNfWjI4aHJpQzF2SmpHOVlEeHFZdUFYRE5uRk53ajJHNWRLU0g0cVIwazZ0ckF0R1gxT3FZcmt2NktSOGFNbXg4ZTduZDNTVGMyOHlqWmpBRy0xOEpYSzd3VzM2ZHlIUWxKRG5hTEZRRXBLclhzdkJ0VEczTENiczl2cHNVSWFsbDBZY0ZOejdYakJrTDUyVmR3SU5fcGxWZ1IzR1A1X3lzV0ppbm5uZHRWaWZuNms3SWhTTzNoWjJ4SElGcVhZNXhGVnJYYlV3a1MwT1d1cDVsdFhWY0NpVHdONlpqTno4LU8wVlJiSF9PZHl3MU5aOGZZcGFXMWc5XzNXa08yMEhMX3Znd09fTjNXUktSLUs5dDNFbG9rY1BQYnE5ekpfdnItUmdVU0pZbjhUdy1wZVRyeUQ5NlV6dms5dGFkeE5CQ3M0LXFiR3VYLU9lZl90RGdsZEhpNW16N3dxUm9xdFNNYUVpakZkRnNBNnphRmlMTUc2azFJZVZ5dEZvcHgzYXVETXNwUTNteGhCcFFJemN2ZGdMQUpvSFJwVUZ4VC1jTFR3V3QxOFlEY2QxT202V1BGQ2g3SEhsSlQ1ZTdfUmhCTGhfbEJkWXAxckxkUmdZNVJjMUpBTzRkc3NnMmlHUng2Y0Z4V3B1cWNjRmpxSkZuTXpTYWRyUVRGWmdLRFVhM0RzSmZwcXZIaGhuTWMzakZiOWFiUDBoY1NLZFNWckxCQ01KbUFBamlWWmdabHVpWnBKei04V2RzeFNqVG1GWWowWktpSkUwLTFEQjhHa3RvZFlDWl9CNUhZVWZOX25uQkdNN1VUMlRfdERIY0xkbnlUcXgxZW9VV0NKQzZaTGJwTWhTU29PNFl2Ujl4U2FVaDlaUEhqS0lZTDlidjhkNS1lcGRwclljdlY4M1Rmdy01WWZRMWp0SDhwcFF2NmNLQi1lWmhsWENPdV9YUFlRVGw0SkZxbFFybEVCRml0ZHItS2h0UGF3U3lyNmZZczlWMmJtQUZNZ21zeUJYTzdBelpEM19TQzg4UUFOSzNiak54cnpLcUdsYll0VkkxVUpMMGJXaHNmSnM5eVZqcEFRRkdkVW9wOS1aNUlCQkNQZzlwa0dOeTdISUNZZTBKTG5aVnBUN2tiSGwxNmdid2hpTW5LTkNPYTNLRXlZR0tlMHVLdkYwX0tlWlY2d2dzeHB2YlVGRGNhbWgtTkplS29nTFUycmJGWmxvY2U4dGVRYWcwZlV6VDdsNGVnemlFWVZmbjRCX19renRkRDRTTERlOVJJOFJ2dGtNaFpxd0duSUR0aUF5eWVRMnJGejF6MVN2cl9obmlTMGtocWxqUkNCWllaTUJEdTVRRGtPdE16TU9TNTAwMFhZUGNQVERJSWlRX0xDczA1SnYxMWRTQTNYbXVfNUQ4Z1FKWVRJQUJseTFPaDJydWF5VjN2X1p3OFU4azc1M0NSMjg4TjBkTmI4bE50Y0plWEZLUEdKTVpvWnNyOUJuQ0U3aFFiOVd1NlVQSG1hTjZwMVlycDFtZmxBMWRUMGNGUGFkbVEtX3hLLUxJYVFOODI2emtBT2J5VGJabjBkajRXUWNyVWxZdmcxNDZIMV9kM2VuVHhZV1MwTHJrOEJLOGNseUhhS0lhNDFVUEdkV0JrRlZ5VGhxcVRRTVFqdGtsT2dFVXNfSmJYdEVDVDNDWlVpMmV2VjRKYkJkX1RVUDdKR1NxZ1dWT0tRQ1ZFcElaUmM4QzkxMk4zTDdkOWFWVUpOY29RWHJ4ZVJZeHRvNFZOeGxmckk3SWRhT0E5M2N5TDJiUURXOWd0LXRqaFZMMXlQZWM5QkZ2ZUpKZFk4eEdCRDJWTHRpNXN2N1RqV0s2Y01MblMxaEhjbVRIOHh3aEoxcVZ6eVNMWmFRNktpbHkyREN5TDVOMjlldlBjR1N1b1IyeXphdmdZb1ItQ3p3U1N0QVh0d2xiNHlNRW1jTkRXU0xDSXpKMmc0aWlwLUY3aUdxWW85VnlNSjBCUEFkY1VYX0VRc3FxR2stUm1IbHEtQzRZSnlpdU12UjRodVRaYnBoNDdQNWhiYnFOTm5tOUFYcUQycjRuNl9Uemg2cGw5Z0I5QzZqNERGUHp1UFY0TnVnVDlBQi1iczBNOW4yZU1fNlc3Y3N5SEg0UGg2ZzQweU95S2FfU1BhdlVpc0hlZVJYdFh5ZHRxelNlVzVCdEpDXzd4d0g0aHdLcVQ2d1J0TGxMcEoxaEI5U2dCRUItU3RwNnI0VjNMNFZ3RWFESDBTNkNOUFR5dTVvNnZmU0ZEYnZIQlFjZDRNQWhkSGlrUm9ENlkzbUJ6Mmh2S1VwWkplTWxPUlI2SkFkcVdPNVNxWktDNE1CQTV2bmk4VWNEb3lHa0tzcG9HWEswNWZDYnVkY1JyWnItUmFaZ0kzU2tSZXZBSFE0YkpQSUpkRi1oWHZOX1oyekZXMGlLYjJXTEVuc3BfdGl4UlNtVHVja0FTZWxTbWR4Sk52aHVKcFpmcEZsa2xDUHpJX1cxOTQwUHR0c2t4enFGVS1zejBvZHp6Si1SeUVBejU1SUJIT282b3BfYkFNek1KZ2VOOG96MGtzTmlwckI3U0hvOHdKdXMyZ0p0RHdfNGh6aHItam9uZ2Y3R1M0dldPVTRyOWtnYjRWdnMtMi1mTXBfaUN2MEpMYnBqQ25WR09zQjlpdm9kOGdDdzZxbEdHM050Qk1ZZzg3Mm5IMkVqVEpEMTRyX3VPbWFBeG5INTRpMElLQmlsWV81RnVpNEthYmNwTnVwY1R5d0ZTNHFQNTV1WXpmOHI0WHJYV0JueWdlZE01NmFDTTlLS1FwaWl6d2N5aUw0dGdMUEtEaWx2RS1yclNicFNDbGhaamQ0MGVEWEctUDRzY253X0FCOFlDbVEycVR3YnhYR1hOZzlWczI3eHdtMzgzTHVMVVVFS3FfbVVNZGlWc0FDZS1TaVVlcWVITTI2SXlGTTJtQnVQQXI1ZWw0NUlqbU41OVktT1JJbTVSZkFJdEptMDZ2OVk3cHR0THZaa0hXTXQzOXp5ZE5zeTdpN0JPV01lOXFrRDU5NmpIaHB3ZWpodVA4LV9EdG9rbC1qdkp3WDFXYVhfSXlBaWdVeksxUHhtcldJWTJxdFh0UXpBMTJNUWxvRklrQVNwLWVOcDhZTElTbXhZYXlCdlVHMUVqTGZ0ekljUWVFcEpkMFBqQXBoTldqOUlYZG1pN0xDemNLbHFaNi10d0RtOG1mbXVsZU5VWUJRMENOdGJtWnhKSlZjczNuaXhDVWpnalhkNDZZb25JM1VPckNGMDdpZUhlMGhCY3Z0ei1CaGF2WDlFaXp0ZU9HeC04YU5uMjV6X0p6Qmx3S0NIclc1X2YxakRRcXM4bFpuYl9yeVY2d200MENtMFVQREFiMENnT3BicWlRVF9Wa2ZVLUM2X2NXY0sxUWljUV9UT3haeVVHeTBLaTFsNHMxT25OSzVxb3lvZVdpTEZoQT0=)
+        FCI_KEYSTORE_PASSWORD: Encrypted(Z0FBQUFBQmdLSmRSX2xfd25SSFhyOG4yQVVEbVdsMV9EVDJwd05OSV9UU1NydVgzTVNBWGV4UFhESHk4YUgyQ0EyQldTa0dYc2ZSUFh2MlNzenN6Y3Rhc1ZCWjJSNWwtRzByRWFoYk05RWRYRGJwbEtkc2FBeDA9)
+        FCI_KEY_PASSWORD: Encrypted(Z0FBQUFBQmdLSmRSc25LeTdRMHU0QXNWZ2FDUEJMNk1kT3RZcEpONVE5M2V4ODRfWHdEYmxsd1Vkcm1idngxYUJkdUp5QXJSd3UteXU5cVVYdzY1Ujlyby1zb1BhVVNYNUQ5TXBnNC1CaV9BZ3VwdUVlTXFEd2M9)
+        FCI_KEY_ALIAS: Encrypted(Z0FBQUFBQmdLSmRST19xX0dRZlNXcGJxby0zWE4tUGVTalZLN3VBYkVMTktrUmhwUWVWQi1yZEZBX3VZZHd5elVaODV2bGhxRDE1NC13X0ozZDZlc3FhVXZKVTNkcWNhQmc9PQ==)
+      flutter: 1.26.0-17.5.pre
+      xcode: latest
+      cocoapods: default
+    cache:
+      cache_paths:
+        - $HOME/Library/Caches/CocoaPods
+        - $HOME/.gradle/caches
+        - $FLUTTER_ROOT/.pub-cache
+    triggering:
+      events:
+        - push
+        - tag
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
+    scripts:
+      - |
+        # set up key.properties
+        echo $FCI_KEYSTORE | base64 --decode > $FCI_KEYSTORE_PATH
+        cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
+        storePassword=$FCI_KEYSTORE_PASSWORD
+        keyPassword=$FCI_KEY_PASSWORD
+        keyAlias=$FCI_KEY_ALIAS
+        storeFile=/tmp/keystore.keystore
+        EOF
+      - |
+        # set up Flutter
+        echo "flutter.sdk=$HOME/programs/flutter" > "$FCI_BUILD_DIR/android/local.properties"
+        cd . && flutter packages pub get
+        cd . && flutter config --enable-web
+      - |
+        # flutter analyze
+        cd . && flutter analyze
+      - |
+        # flutter test
+        cd . && flutter test
+      - |
+        # build Android
+        cd . && flutter build apk --release --target="lib/main_mobile.dart" -v
+      - |
+        # build iOS
+        find . -name "Podfile" -execdir pod install \;
+        cd . && flutter build ios --release --target="lib/main_mobile.dart" --no-codesign -v
+        cd build/ios/iphoneos/
+        mkdir -p Payload
+        mv Runner.app Payload/
+        zip -ry Runner.ipa Payload
+      - |
+        # build Web
+        cd .
+        flutter build web --release --target="lib/main_web.dart" -v
+        cd build/web
+        7z a -r ../web.zip ./*
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
+      - build/app/outputs/mapping/release/mapping.txt
+      - build/ios/iphoneos/Runner.ipa
+      - build/web.zip
+    publishing:
+      email:
+        recipients:
+          - k-yamashita@kitproject.info
+      github_releases:
+        prerelease: true
+        artifact_patterns:
+          - mapping.txt
+          - web.zip
+          - Runner.ipa
+          - app-release.apk
+      scripts:
+        - |
+          # deploy Firebase
+          firebase deploy -P default -m "Build number "$PROJECT_BUILD_NUMBER", Branch
+          name "$FCI_BRANCH"" --token "$FIREBASE_TOKEN" --only hosting
