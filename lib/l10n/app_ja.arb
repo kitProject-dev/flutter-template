@@ -1,0 +1,6 @@
+{
+  "title": "Flutter template",
+  "homePageTitle": "Flutter template Home Page",
+  "homePageDescription": "ボタンを押した回数:",
+  "incrementButton": "増やす"
+}

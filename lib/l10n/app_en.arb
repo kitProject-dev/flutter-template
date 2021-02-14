@@ -1,0 +1,18 @@
+{
+  "title": "Flutter template",
+  "@title": {
+    "description": "App title"
+  },
+  "homePageTitle": "Flutter template Home Page",
+  "@homePageTitle": {
+    "description": "Home page title"
+  },
+  "homePageDescription": "You have pushed the button this many times:",
+  "@homePageDescription": {
+    "description": "Home page description"
+  },
+  "incrementButton": "Increment",
+  "@incrementButton": {
+    "description": "Increment button"
+  }
+}
