@@ -1,0 +1,35 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.1280.720" x="640" y="300" />
+  </component>
+  <component name="WindowManager">
+    <frame x="-1" y="-1" width="1282" height="726" extendedState="6" />
+    <layout>
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+    </layout>
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="236" y="0" width="802" height="707" key="#Plugins" timestamp="1613812865332">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="236" y="0" width="802" height="707" key="#Plugins/0.0.1280.720" timestamp="1613812865332" />
+    <state x="99" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613812789531">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="99" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720" timestamp="1613812789531" />
+    <state x="424" y="94" width="426" height="479" key="FileChooserDialogImpl" timestamp="1613812892300">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="424" y="94" width="426" height="479" key="FileChooserDialogImpl/0.0.1280.720" timestamp="1613812892300" />
+    <state x="641" y="326" key="WELCOME_SCREEN" timestamp="1613812865334">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="641" y="326" key="WELCOME_SCREEN/0.0.1280.720" timestamp="1613812865334" />
+  </component>
+</application>

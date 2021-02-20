@@ -1,10 +1,12 @@
 image: kitproject/gitpod-flutter:v1.26.0-17.5.pre-android-studio
 tasks:
   - init: >
-      flutter pub get
+      cp -r -f /workspace/flutter-template/.config ~ && cp -r -f /workspace/flutter-template/.local ~ && flutter pub get
     command: >
       flutter run --release -d web-server --web-port=8080 --web-hostname=0.0.0.0 --target="lib/main_web.dart" -v
 ports:
+  - port: 6080
+    protocol: "http"
   - port: 8080
     onOpen: open-preview
 vscode:
