@@ -1,4 +1,4 @@
-image: kitproject/gitpod-flutter:v1.26.0-17.5.pre
+image: kitproject/gitpod-flutter:v1.26.0-17.5.pre-android-studio
 tasks:
   - init: >
       flutter pub get
