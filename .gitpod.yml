@@ -1,14 +1,15 @@
-image: kitproject/gitpod-flutter:v1.26.0-17.5.pre
+image: kitproject/gitpod-flutter:v2.0.1
 tasks:
   - init: >
       flutter pub get
     command: >
-      flutter run --release -d web-server --web-port=8080 --web-hostname=0.0.0.0 --target="lib/main_web.dart" -v
+      flutter run --debug -d web-server --web-port=8080 --web-hostname=0.0.0.0 --target="lib/main_web.dart" -v
 ports:
   - port: 8080
     onOpen: open-preview
 vscode:
   extensions:
-    - Dart-Code.dart-code@3.7.1:3XT4xvtPoRdNasA5smNMiA==
-    - Dart-Code.flutter@3.7.1:gujVOCgsbgoN2/po8X1tfA==
-    - alphabotsec.vscode-eclipse-keybindings@0.10.0:sHFK2cBlpLZsoaR/+m8Nig==
+    - dart-code.dart-code@3.20.1:gGa6ad50ztRhIjcM9pnYxQ==
+    - dart-code.flutter@3.20.0:BhnREmTX9cfXUczRkKavfg==
+    - alphabotsec.vscode-eclipse-keybindings@0.12.0:FCwchQz8KuaeuhwHtGmfUw==
+    - robert-brunhage.flutter-riverpod-snippets@0.1.1:1yVggXYvAzhaVpbx3eIvCg==
