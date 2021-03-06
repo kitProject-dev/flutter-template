@@ -14,5 +14,13 @@
   "incrementButton": "Increment",
   "@incrementButton": {
     "description": "Increment button"
+  },
+  "loadingMessage": "Loading",
+  "@loadingMessage": {
+    "description": "Loading message"
+  },
+  "counterLoadingMessage": "Counter is loading.",
+  "@counterLoadingMessage": {
+    "description": "Counter is loading message"
   }
 }

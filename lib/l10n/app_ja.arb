@@ -2,5 +2,7 @@
   "title": "Flutter template",
   "homePageTitle": "Flutter template Home Page",
   "homePageDescription": "ボタンを押した回数:",
-  "incrementButton": "増やす"
+  "incrementButton": "増やす",
+  "loadingMessage": "読込中",
+  "counterLoadingMessage": "カウンターを読込中です。"
 }
