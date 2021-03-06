@@ -1,9 +1,9 @@
 name: flutter_template
-description: A new Flutter application.
+description: kitProject Flutter template.
 
 publish_to: 'none'
 
-version: 0.1.2+1002
+version: 1.0.0+10000
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -13,14 +13,17 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_hooks: ^0.16.0
   flutter_localizations:
     sdk: flutter
-  intl: ^0.17.0-nullsafety.2
+  hooks_riverpod: ^0.13.1
+  intl: ^0.17.0
+  shared_preferences: ^2.0.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  pedantic: ^1.10.0
+  pedantic: ^1.11.0
 
 flutter:
   generate: true

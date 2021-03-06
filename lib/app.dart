@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:flutter_template/provider/counter_provider.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -16,24 +19,15 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key key}) : super(key: key);
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+class MyHomePage extends HookWidget {
   @override
   Widget build(BuildContext context) {
+    final _counterViewController = context.read(counterViewController);
+    useEffect(() {
+      _counterViewController.initState();
+      return _counterViewController.dispose;
+    }, []);
+    final counter = useProvider(counterState).state;
     return Scaffold(
       appBar: AppBar(
         title: Text(AppLocalizations.of(context).homePageTitle),
@@ -46,14 +40,28 @@ class _MyHomePageState extends State<MyHomePage> {
               AppLocalizations.of(context).homePageDescription,
             ),
             Text(
-              '$_counter',
+              (counter != null)
+                  ? counter.count.toString()
+                  : AppLocalizations.of(context).loadingMessage,
               style: Theme.of(context).textTheme.headline4,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: () => (counter != null)
+            ? _counterViewController.countUp()
+            : ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text(
+                    AppLocalizations.of(context).counterLoadingMessage,
+                  ),
+                  duration: const Duration(
+                    seconds: 1,
+                  ),
+                  action: null,
+                ),
+              ),
         tooltip: AppLocalizations.of(context).incrementButton,
         child: const Icon(Icons.add),
       ),
