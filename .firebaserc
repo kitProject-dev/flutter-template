@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "kitproject-flutter-template"
+    "default": "flutter-template-develop",
+    "develop": "flutter-template-develop",
+    "production": "kitproject-flutter-template"
   }
 }
