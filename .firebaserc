@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "flutter-template-develop",
+    "default": "flutter-template-staging-a8362",
+    "default": "flutter-template-staging-a8362",
     "develop": "flutter-template-develop",
     "production": "kitproject-flutter-template"
   }
