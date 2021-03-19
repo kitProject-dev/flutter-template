@@ -57,7 +57,7 @@ scripts:
   - &release_android
     name: Release Android
     script: |
-            firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk --app $APPID --groups "android-testers" -P $FIREBASE_FLAVOR --release-notes "Build number "$PROJECT_BUILD_NUMBER", Branch name "$FCI_BRANCH"" --token "$FIREBASE_TOKEN"
+            firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk --app $APPID --groups "android-testers" -P $FIREBASE_FLAVOR --release-notes "Flavor "$FIREBASE_FLAVOR", Build number "$PROJECT_BUILD_NUMBER", Branch name "$FCI_BRANCH"" --token "$FIREBASE_TOKEN"
   - &deploy_firebase
     name: Deploy Firebase
     script: |
