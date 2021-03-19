@@ -114,7 +114,6 @@ workflows:
         recipients:
           - k-yamashita@kitproject.info
       scripts:
-        - *deploy_firebase
         - *release_android
   master-workflows:
     name: Master workflows
