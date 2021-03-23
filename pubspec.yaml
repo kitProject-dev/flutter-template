@@ -3,24 +3,24 @@ description: kitProject Flutter template.
 
 publish_to: 'none'
 
-version: 1.0.1+10001
+version: 1.0.2+10002
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
-  flutter: "2.0.1"
+  flutter: "2.0.3"
 
 dependencies:
   cupertino_icons: ^1.0.2
   firebase_analytics: ^7.1.1
-  firebase_core: ^1.0.1
+  firebase_core: ^1.0.2
   flutter:
     sdk: flutter
   flutter_hooks: ^0.16.0
   flutter_localizations:
     sdk: flutter
-  hooks_riverpod: ^0.13.1
+  hooks_riverpod: ^0.13.1+1
   intl: ^0.17.0
-  shared_preferences: ^2.0.3
+  shared_preferences: ^2.0.5
 
 dev_dependencies:
   flutter_test:
