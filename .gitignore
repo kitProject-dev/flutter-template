@@ -45,6 +45,9 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Android keystore
+/android/app/key.keystore
+
 # Firebase config
 /web/firebaseConfig.js
 /android/app/google-services.json
