@@ -25,10 +25,14 @@ scripts:
             echo $ANDROID_FIREBASE_CONFIG | base64 --decode > $FCI_BUILD_DIR/android/app/google-services.json
             echo Decoded google-services.json! Here is the directory after.
             ls $FCI_BUILD_DIR/android/app
-  - &build_android
-    name: Build Android
+  - &build_apk
+    name: Build apk
     script: |
             cd . && flutter build apk --release --target="lib/main_mobile.dart" -v
+  - &build_appbundle
+    name: Build appbundle
+    script: |
+      cd . && flutter build appbundle --release --target="lib/main_mobile.dart" -v
   - &set_up_ios_properties
     name: Set up iOS properties
     script: |
@@ -96,6 +100,7 @@ workflows:
       flutter: 2.0.3
       xcode: latest
       cocoapods: default
+      ndk: r22
     cache:
       cache_paths:
         - $HOME/Library/Caches/CocoaPods
@@ -113,7 +118,7 @@ workflows:
       - *flutter_analyze
       - *flutter_test
       - *set_up_android_properties
-      - *build_android
+      - *build_apk
       - *set_up_ios_properties
       - *build_ios
       - *set_up_web_properties
@@ -154,6 +159,7 @@ workflows:
       flutter: 2.0.3
       xcode: latest
       cocoapods: default
+      ndk: r22
     cache:
       cache_paths:
         - $HOME/Library/Caches/CocoaPods
@@ -171,7 +177,7 @@ workflows:
       - *flutter_analyze
       - *flutter_test
       - *set_up_android_properties
-      - *build_android
+      - *build_apk
       - *set_up_ios_properties
       - *build_ios
       - *set_up_web_properties
@@ -213,6 +219,7 @@ workflows:
       flutter: 2.0.3
       xcode: latest
       cocoapods: default
+      ndk: r22
     triggering:
       events:
         - tag
@@ -225,13 +232,13 @@ workflows:
       - *flutter_analyze
       - *flutter_test
       - *set_up_android_properties
-      - *build_android
+      - *build_appbundle
       - *set_up_ios_properties
       - *build_ios
       - *set_up_web_properties
       - *build_web
     artifacts:
-      - build/app/outputs/flutter-apk/app-release.apk
+      - build/app/outputs/bundle/release/app-release.aab
       - build/app/outputs/mapping/release/mapping.txt
       - build/ios/ipa/flutter_template.ipa
       - build/web.zip
@@ -239,12 +246,16 @@ workflows:
       email:
         recipients:
           - k-yamashita@kitproject.info
+      # google_play:
+      #   credentials: Encrypted()
+      #   track: internal
+      #   in_app_update_priority: 0
       github_releases:
         prerelease: true
         artifact_patterns:
           - mapping.txt
           - web.zip
           - Runner.ipa
-          - app-release.apk
+          - app-release.aab
       scripts:
         - *deploy_firebase
