@@ -250,6 +250,9 @@ workflows:
       #   credentials: Encrypted()
       #   track: internal
       #   in_app_update_priority: 0
+      # app_store_connect:
+      #   apple_id: apple@kitproject.info
+      #   password: Encrypted()
       github_releases:
         prerelease: true
         artifact_patterns:
